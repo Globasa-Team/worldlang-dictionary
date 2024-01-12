@@ -120,6 +120,29 @@ if (!empty($entry['antonyms'])):
 
 
 
+
+
+<?
+/**
+ * Rhymes with
+ */
+if (!empty($entry['rhymes'])):
+    ?>
+    <section>
+        <h2><?=sprintf($config->getTrans("entry rhymes with"), "");?></h2>
+        <?
+        foreach ($entry['rhymes'] as $cur) :
+            ?><a href="<?=WorldlangDictUtils::makeUri(
+                        $config,
+                        'lexi/'.$cur,
+                        $request
+                    );?>" class="hl encap" lang="<?=GLB_CODE;?>"><?=$cur;?></a><?
+        endforeach; ?>
+    </section>
+<? endif; ?>
+
+
+
 <?
 /**
  * Etymology
