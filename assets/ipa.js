@@ -20,7 +20,7 @@ const DEMARC = '\u001F' // Unicode/ASCII seperator character
 const NO_SHIFT_CHARS = ['a', 'e', 'i', 'o', 'u', '-']; // Vowels don't shift, but also don't go past a hyphen
 const ONSET_CONSONANTS = ['b', 'd', 'f', 'g', 'k', 'p', 't', 'v'];
 const CODA_CONSONANTS = ['c', 'x', 'j', 'l', 'm', 'n', 'r', 's', 'w', 'x', 'y', 'z']
-const SPECIAL_SHIFT_LETTERS = ['y', 'w', 'r', 'l']; // TODO remove
+const SPECIAL_SHIFT_LETTERS = ['y', 'w', 'r', 'l']; // TODO: remove IPA constants
 const ALL_QUOTES_REGEX = /['"“”‘’]/g;
 // IPA is \u0250-\u02AF
 const SENTENCE_REGEX = /([;:.?!…]+)(\s*)(?=[\w\u0250-\u02AF])*/g;

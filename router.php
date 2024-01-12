@@ -40,6 +40,14 @@ function router($config)
             case 'abeceli-menalari':
                 Browse_controller::default($config, $request, $page);
                 break;
+            case 'natlangs':
+                require_once('controllers/Natlangs_controller.php');
+                Natlangs_controller::run($config, $request, $page);
+                break;
+            case 'reports':
+                require_once('controllers/Reports_controller.php');
+                Reports_controller::run($config, $request, $page);
+                break;
             case 'test':
                 Test_controller::helloWorld($config, $request, $page);
                 break;

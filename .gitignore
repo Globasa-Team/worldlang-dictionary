@@ -1,6 +1,8 @@
 # Ignore web server error logs
 error_log
 debug.log
+
+# Ignore configs
 src/config.php
 .php_cs.cache
 config.php
@@ -12,3 +14,7 @@ backup
 backups
 backup/
 backups/
+
+# Ignore dev stuff
+notes.md
+todo*.md

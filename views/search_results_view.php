@@ -34,7 +34,7 @@
         ?></dt>
         <dd>
             <? if (isset($entry['word class']) && !empty($entry['word class'])) :
-                ?> <span class="wordClass">(<a href="https://xwexi.globasa.net/'<?=$request->lang;?>'/gramati/lexiklase"><?=$entry['word class'];?></a>)</span>&nbsp; <?
+                ?> <span class="wordClass">(<a href="https://xwexi.globasa.net/<?=$request->lang;?>/gramati/lexiklase"><?=$entry['word class'];?></a>)</span>&nbsp; <?
             endif; ?>
             <?=$entry['trans html'][$request->lang];?>
         </dd>
